@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 37.5rem;
+    margin-top: 1rem;
+  }
+
+  .img-box,
+  .content-box {
+    width: 100%;
+  }
+
+  .img-box {
+    height: 35rem;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .content-box {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .prices {
+    margin-top: 5rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

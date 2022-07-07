@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  /* Primary */
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fraunces", "Montserrat";
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: var(--Cream);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  max-width: 60rem;
+  width: 100%;
+  min-height: 42rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.img-box {
+  width: 50%;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* .img-parfum {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+} */
+
+.content-box {
+  width: 48%;
+  padding: 3rem;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.perfume {
+  text-transform: uppercase;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.title {
+  margin-top: 2rem;
+  line-height: 1.1;
+}
+
+.describe {
+  margin-top: 2rem;
+  font-family: "Montserrat";
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.price {
+  font-size: 3rem;
+  color: var(--Dark-cyan);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: var(--Dark-cyan);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.8rem 5rem;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: ease-in-out 0.4s;
+  margin-top: 4rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #1a4031;
+}
